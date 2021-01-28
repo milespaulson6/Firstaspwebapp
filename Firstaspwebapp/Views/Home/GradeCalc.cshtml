@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Input your grades here";
+}
+@model GradesModel
+
+
+
+<body>
+    <center>
+        <form method="post" onsubmit="return false">
+
+            <!--This is the form asking for each percentage of the grades for each section--
+            -->
+            <label>What percent did you get on your assignments:</label>
+            <br />
+            <input type="number" asp-for="Assignment" id="Assignment" />
+            <br />
+            <br />
+            <label>What percent did you get on your group projects:</label>
+            <br />
+            <input type="number" asp-for="Group" id="Projects" />
+            <br />
+            <br />
+            <label>What percent did you get on your quizzes:</label>
+            <br />
+            <input type="number" asp-for="Quiz" id="Quiz" />
+            <br />
+            <br />
+            <label>What percent did you get on your exams:</label>
+            <br />
+            <input type="number" asp-for="Exam" id="Exam" />
+            <br />
+            <br />
+            <label>What percent did you get on INTEX:</label>
+            <br />
+            <input type="number" asp-for="Intex" id="Intex" />
+            <br />
+            <br />
+            <input type="submit" value="Calculate Grade" id="submitButton" />
+            <div asp-validation-summary="All"></div>
+        </form>
+    </center>
+    <br />
+    <center>
+
+
+        <!--THis is where i am outputting the letter grade and the GPA-->
+            <p id="outputLet" class="outputLet"><br></p>
+            <p id="outputNum" class="outputNum"><br></p>
+</center>
+</body>

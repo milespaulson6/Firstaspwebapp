@@ -1,0 +1,37 @@
+﻿<!--Miles Paulson Section 004 group 12-->
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>@ViewBag.Title</title>
+    <!--linking my css sheet and getting my website icon-->
+    <link href="~/css/Main.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="~/NewFolder1/favicon-32x32.png" sizes="32x32" />
+</head>
+<body>
+    <header>
+        <center>
+            <h2>@ViewBag.Header</h2>
+            <menu>
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <br />
+            <a asp-controller="Home" asp-action="GradeCalc">Grade Calculation</a>
+                
+            </menu>
+        </center>
+    </header>
+
+    @RenderBody()
+
+   
+
+
+
+
+
+<footer>Yeet</footer>
+<script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="~/js/Grade.js"></script>
+</body>
+
+</html>

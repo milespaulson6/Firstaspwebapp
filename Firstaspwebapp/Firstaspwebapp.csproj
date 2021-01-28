@@ -5,11 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\index.html" />
+    <Content Remove="Views\Home\Grades.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\NewFolder1\" />
+    <PackageReference Include="OdeToCode.UseNodeModules" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Views\Home\Grades.cshtml" />
   </ItemGroup>
 
 </Project>
